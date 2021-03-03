@@ -6,7 +6,8 @@ from django.urls import reverse
 from .models import Question, Choice
 
 # Get questions and display them
-
+def main(request):
+    return render(request, 'pages/index.html')
 
 def index(request):
     latest_question_list = Question.objects.order_by('-pub_date')[:5]
