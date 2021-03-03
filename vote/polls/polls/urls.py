@@ -26,9 +26,9 @@ from django.urls import path, include
 from polls import views as polls_views
 
 urlpatterns = [
-    path('', include('poll2app.urls')),
+  
     path('admin/', admin.site.urls),
-    path('pollapp', include('pollapp.urls')),
+    path('', include('pollapp.urls')),
 ]
 if settings.DEBUG:
     urlpatterns+=static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
