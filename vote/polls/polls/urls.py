@@ -26,14 +26,11 @@ from django.urls import path, include
 from polls import views as polls_views
 
 urlpatterns = [
-<<<<<<< HEAD
+
 
     path('admin/', admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')),
-=======
-  
-    path('admin/', admin.site.urls),
->>>>>>> d2f45c7ecaed4ac609751fa57b235806a9a08f86
+
     path('', include('pollapp.urls')),
 ]
 if settings.DEBUG:
