@@ -36,6 +36,7 @@ def login(request):
         request.session['users_name']=m.email
 
 
+<<<<<<< HEAD
         return render(request,'pages/index.html',{'name':m.email})
     else:
         return HttpResponse("invalid")
@@ -50,6 +51,11 @@ def logout(request):
      return render(request, 'login/login.html')
 def main(request):
     return render(request, 'pages/index.html')
+=======
+def main(request):
+    return render(request, 'pages/index.html')
+
+>>>>>>> e0ea15c5017c2b15dc0e875602d0f2acf851cc97
 
 def homepage(request):
     return render(request, 'pages/index.html')

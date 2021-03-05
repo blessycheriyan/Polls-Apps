@@ -26,8 +26,15 @@ from django.urls import path, include
 from polls import views as polls_views
 
 urlpatterns = [
+<<<<<<< HEAD
 
     path('admin/', admin.site.urls),
+=======
+
+
+    path('admin/', admin.site.urls),
+    path('accounts/', include('django.contrib.auth.urls')),
+>>>>>>> e0ea15c5017c2b15dc0e875602d0f2acf851cc97
 
     path('', include('pollapp.urls')),
 ]
