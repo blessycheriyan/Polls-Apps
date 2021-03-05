@@ -8,7 +8,8 @@ from .models import Question, Choice
 
 
 
-
+from pollapp.models import users
+admin.site.register(users)
 
 
 

@@ -1,6 +1,11 @@
 {% extends 'base.html' %}
 {% load static %}
+
+
+
+
 {% block content %}
+
     <br>
 
         <br>
@@ -11,13 +16,21 @@
         <br>
         <br>
         <br>
+
+  <br>
+        <br>
+
+
 <div class="card text-center">
     <div class="card-body">
-
+  <br>
+        <br>
+          <br>
+        <br>
         <h1 class="text-primary">Welcome To Polls</h1>
         <marquee><p>Polling App</p></marquee>
         <a class="btn btn-dark" href="{% url 'polls:index' %}">
-            View Available Polls</a>
+            View Details</a>
     </div>
 </div>
 
@@ -28,7 +41,7 @@
 
     body{
 
-background-image: url("{% static 'images/wr.jpg' %}");
+background-image: url("{% static 'images/polls.png' %}");
 background-repeat: no-repeat, repeat;
 
  background-size: cover;
