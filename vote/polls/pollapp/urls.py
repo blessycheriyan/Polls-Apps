@@ -4,11 +4,16 @@ from . import views
 
 app_name = 'polls'
 urlpatterns = [
-<<<<<<< HEAD
-    path('', views.main, name='main'),
-=======
-     path('', views.main, name='main'),
->>>>>>> d2f45c7ecaed4ac609751fa57b235806a9a08f86
+    path('main', views.main, name='main'),
+    path('register', views.register, name='register'),
+    path('login', views.login, name='login'),
+    path('logout', views.logout, name='logout'),
+    path('log', views.login, name='login'),
+    path('home', views.home, name='home'),
+    path('homepage', views.homepage, name='homepage'),
+
+    path('', views.userpage, name='userpage'),
+    path('uspg', views.uspg, name='uspg'),
     path('index', views.index, name='index'),
     path('<int:question_id>/', views.detail, name='detail'),
     path('<int:question_id>/results/', views.results, name='results'),

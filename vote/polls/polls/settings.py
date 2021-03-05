@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles','pollapp','accounts',
+    'django.contrib.staticfiles','pollapp',
 'crispy_forms',
 ]
 
@@ -128,4 +128,4 @@ CRISPY_TEMPLATE_PACK='bootstrap4'
 MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 MEDIA_URL='/media/'
 
-LOGIN_REDIRECT_URL='/'
+LOGIN_REDIRECT_URL='polls:index'
